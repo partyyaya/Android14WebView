@@ -4,13 +4,17 @@
         here.innerHTML=parseInt(Math.random()*49+1);
     }
     function test2(){
-        alert("1223"); //javascript對話框部會看到
+        ming.alert("ok"); //javascript對話框部會看到
     }
     function test3(name){
         var here = document.getElementById("here2");
         here.innerHTML=name;
     }
 
+    function test4(){
+    var name = document.getElementById('name').value;
+        ming.m1(name);
+    }
 </script>
 
 <h1 style="background-color:green">Ming Big Company</h1>
@@ -22,4 +26,6 @@
 <button onclick="test2()">Click me</button><br/>
 <div id="here2"></div><br>
 <hr/>
-<a href="map.html">map</a>
+<a href="map.html">map</a><br/>
+<input type="text" id="name"/>
+<button onclick="test4()">test4</button>
